@@ -8,19 +8,19 @@
         <link rel="stylesheet" href="/fonts/PTSans.woff2">
         <link rel="stylesheet" href="/fonts/PTSans.woff">
         <link rel="stylesheet" href="/normalize.css">
-        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="/css/style.css">
         <meta charset="utf-8">
         <title class="title">SEDONA</title>
     </head>
-    <body>
+    <body class="center">
         <header class="main-header">
-            <div class="logo"><a href="index.html"><img src="/image/logo.png" width="138px" height="70px" alt="Логотип"></a></div>
-            <nav class="navigation">
+            <div class="main-header-logo"><a href="index.html"><img src="/image/logo.png" width="138px" height="70px" alt="Логотип"></a></div>
+            <nav class="main-header-navigation">
                 <ul class="navigation-list">
-                    <li class="navigation-list-item"><a href="#">Информация</a></li>
-                    <li class="navigation-list-item"><a href="#">Фото и видео</a></li>
-                    <li class="navigation-list-item"><a href="#">Карта штата</a></li>
-                    <li class="navigation-list-item"><a href="#">Гостиницы</a></li>
+                    <li class="navigation-list-item"><a class="navigation-list-link" href="#">Информация</a></li>
+                    <li class="navigation-list-item"><a class="navigation-list-link" href="#">Фото и видео</a></li>
+                    <li class="navigation-list-item"><a class="navigation-list-link" href="#">Карта штата</a></li>
+                    <li class="navigation-list-item"><a class="navigation-list-link" href="#">Гостиницы</a></li>
                 </ul>
             </nav>
         </header>
@@ -30,17 +30,17 @@
                 <fieldset>
                     <legend class="subtitle">Инфаструктура:</legend>
                     <ul class="subtitle-list">
-                        <li class="subtitle-item"><input type="checkbox" name="Pool" checked>Бассейн</li>
-                        <li class="subtitle-item"><input type="checkbox" name="Parking">Парковка</li>
-                        <li class="subtitle-item"><input type="checkbox" name="Wi-Fi">Wi-Fi</li>
+                        <li class="subtitle-list-item"><input type="checkbox" name="Pool" checked>Бассейн</li>
+                        <li class="subtitle-list-item"><input type="checkbox" name="Parking" disabled checked>Парковка</li>
+                        <li class="subtitle-list-item"><input type="checkbox" name="Wi-Fi" disabled>Wi-Fi</li>
                     </ul>
                 </fieldset>
                 <fieldset>
                     <legend class="subtitle">Тип жилья:</legend>
                     <ul class="subtitle-list">
-                        <li class="subtitle-item"><input type="checkbox" name="Hotel" checked>Гостиница</li>
-                        <li class="subtitle-item"><input type="checkbox" name="Motel" checked>Мотель</li>
-                        <li class="subtitle-item"><input type="checkbox" name="Appartments" checked>Апартаменты</li>
+                        <li class="subtitle-list-item"><input type="checkbox" name="Hotel" checked>Гостиница</li>
+                        <li class="subtitle-list-item"><input type="checkbox" name="Motel" checked>Мотель</li>
+                        <li class="subtitle-list-item"><input type="checkbox" name="Appartments" checked>Апартаменты</li>
                     </ul>
                 </fieldset>
                 <fieldset>
@@ -54,9 +54,11 @@
                 <h2 class="result-found">Найдено:3</h2>
                 <p class="sorting">Сортировка:</p>
                 <ul class="result-sorting-list">
-                    <li class="result-sorting-list-item"><a href="#">По цене</a></li>
+                    <li class="result-sorting-list-item"><a class="active" href="#">По цене</a></li>
                     <li class="result-sorting-list-item"><a href="#">По типу</a></li>
                     <li class="result-sorting-list-item"><a href="#">По рейтингу</a></li>
+                    <button class="triangle-top"><img src="/image/triangle-top.svg"width="11px" height="10px" alt="Треугольник-вверх"></button>
+                    <button class="triangle-bottom"><img src="/image/triangle-bottom.svg"width="11px" height="10px" alt="Треугольник-вниз"></button>
                 </ul>
                 <ul class="result-found-list">
                     <li class="result-found-item">
@@ -66,6 +68,11 @@
                         <p class="result-found-min">ОТ 4000 Р.</p>
                         <button class="button button-result-more">Подробнее</button>
                         <button class="button button-result-booking">Забронировать</button>
+                        <img src="/image/star.svg" width="18px" height="17px" alt="Звезда">
+                        <img src="/image/star.svg" width="18px" height="17px" alt="Звезда">
+                        <img src="/image/star.svg" width="18px" height="17px" alt="Звезда">
+                        <img src="/image/star.svg" width="18px" height="17px" alt="Звезда">
+                        <span class="result-raiting">РЕЙТИНГ:8,5</span>
                     </li>
                     <li class="result-found-item"><h3>Desert Quail Inn</h3>
                         <img src="/image/motel.jpg" width="135px" height="90" alt="Мотель">
@@ -73,6 +80,10 @@
                         <p class="result-found-min">ОТ 3000 Р.</p>
                         <button class="button button-result-more">Подробнее</button>
                         <button class="button button-result-booking">Забронировать</button>
+                        <img src="/image/star.svg" width="18px" height="17px" alt="Звезда">
+                        <img src="/image/star.svg" width="18px" height="17px" alt="Звезда">
+                        <img src="/image/star.svg" width="18px" height="17px" alt="Звезда">
+                        <span class="result-raiting">РЕЙТИНГ:8,9</span>
                     </li>
                     <li class="result-found-item"><h3>Villas at Poco Diablo</h3>
                         <img src="/image/apartment.jpg" width="135px" height="90" alt="Апартаменты">
@@ -80,6 +91,9 @@
                         <p class="result-found-min">ОТ 2000 Р.</p>
                         <button class="button button-result-more">Подробнее</button>
                         <button class="button button-result-booking">Забронировать</button>
+                        <img src="/image/star.svg" width="18px" height="17px" alt="Звезда">
+                        <img src="/image/star.svg" width="18px" height="17px" alt="Звезда">
+                        <span class="result-raiting">РЕЙТИНГ:9,2</span>
 
                     </li>
                 </ul>

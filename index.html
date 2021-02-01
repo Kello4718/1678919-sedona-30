@@ -8,13 +8,13 @@
         <link rel="stylesheet" href="/fonts/PTSans.woff2">
         <link rel="stylesheet" href="/fonts/PTSans.woff">
         <link rel="stylesheet" href="/normalize.css">
-        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="/css/style.css">
         <meta charset="utf-8">
         <title class="title">SEDONA</title>
     </head>
     <body class="center">
         <header class="main-header">
-            <div class="main-header-logo"><img src="/image/Logo.png" width="138px" height="70px" alt="Логотип"></div>
+            <div class="main-header-logo"><img src="/image/logo.png" width="138px" height="70px" alt="Логотип"></div>
             <nav class="main-header-navigation">
                 <ul class="navigation-list">
                     <li class="navigation-list-item"><a class="navigation-list-link" href="#">Информация</a></li>
@@ -27,13 +27,13 @@
         <main>
             <section class="slogan">
                 <div class="slogan-background">
-                    <img src="/image/Background-photo.png" width="1200px" height="509px" alt="Седона">
+                    <img src="/image/background-photo.png" width="1200px" height="509px" alt="Седона">
                 </div>
                 <div class="slogan-background-bottom">
-                    <img src="/image/Shape.png" width="1200px" height="57px" alt="Декорации фоновой картинки">
+                    <img src="/image/shape.png" width="1200px" height="57px" alt="Декорации фоновой картинки">
                 </div>
                 <div class="slogan-title">
-                    <img src="/image/Welcome-Sedona.svg" width="456.65px" height="350.88px" alt="Добро пожаловать Седона">
+                    <img src="/image/welcome-Sedona.svg" width="456.65px" height="350.88px" alt="Добро пожаловать Седона">
                 </div>
             </section>
             <section class="about">
@@ -97,19 +97,23 @@
                 <form class="search-hotel-form" method="get" action="https://echo.htmlacademy.ru/">
                     <p class="search-hotel-form-text">
                         <label for="check-in">Дата заезда:</label>
-                        <input type="date" name="check-in" id="check-in">
+                        <input class="check-in" type="text" name="check-in" id="check-in" value="24 АПРЕЛЯ 2017">
                     </p>
                     <p class="search-hotel-form-text">
                     <label for="check-out">Дата выезда:</label>
-                    <input type="date" name="check-out" id="check-out">
+                    <input class="check-out" type="text" name="check-out" id="check-out" value="4 ИЮЛЯ 2017">
                     </p>    
                     <p class="search-hotel-form-text">
                     <label for="adult">Взрослые:</label>
-                    <input type="number" min="0" name="adult" id="adult">
+                    <input class="button button-minus" type="button" value="-" name="-">
+                    <input class="adult" type="text" name="adult" value="2">
+                    <input class="button button-plus" type="button" value="+" name="+">
                     <label for="children">Дети:</label>
-                    <input type="number" min="0" name="children" id="children">
+                    <input class="button button-minus" type="button" value="-" name="-">
+                    <input class="children" type="text" name="children" value="0">
+                    <input class="button button-plus" type="button" value="+" name="+">
                     </p>
-                    <input class="button button-to-find" type="submit" name="search" value="Найти">
+                    <input class="button button-to-find" type="submit" name="to-find" value="Найти">
                 </form>
             </section>
         </main>
@@ -121,19 +125,23 @@
             <section class="social">
                 <ul class="social-list">
                     <li class="social-list-item vk">
-                        <a class="social-button" href="#"><img src="/image/twitter.svg" width="16.98" height="15.01" alt="Твитер"></a>
+                        <a class="social-button" href="#"><img src="/image/twitter.svg" width="16.98px" height="15.01px" alt="Твитер"></a>
                     </li>
                     <li class="social-list-item fb">
-                        <a class="social-button" href="#"><img src="/image/fb-icon.svg" width="16.98" height="15.01" alt="Фэйсбук"></a>
+                        <a class="social-button" href="#"><img src="/image/fb-icon.svg" width="16.98px" height="15.01px" alt="Фэйсбук"></a>
                     </li>
                     <li class="social-list-item youtobe">
-                        <a class="social-button" href="#"><img src="/image/youtube.svg" width="16.98" height="15.01" alt="Ютуб"></a>
+                        <a class="social-button" href="#"><img src="/image/youtube.svg" width="16.98px" height="15.01px" alt="Ютуб"></a>
                     </li>
                 </ul>
             </section>
             <section class="copyright">
                 <p class="copyright-text">Website by</p>
-                <div class="copyright-logo"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="/image/HTML-Academy.svg" width="113.98" height="39.78" alt="Логотип HTML-academy"></a></div>
+                <div class="copyright-logo">
+                    <a href="https://htmlacademy.ru/intensive/htmlcss">
+                        <img src="/image/html-academy.svg" width="113.98px" height="39.78px" alt="Логотип HTML-academy">
+                    </a>
+                </div>
             </section>
         </footer>
     </body>
