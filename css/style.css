@@ -25,10 +25,11 @@
 
     background-color: var(--outside);
     }
+    
     .page-body {
     width: 1200px;
 
-    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
@@ -38,11 +39,6 @@
     background-color: var(--white);
 
     margin: 0 40px;
-    }
-    /*CENTER*/
-    .center {
-    color: var(--white);
-    background-color: var(--white);
     }
     /*NAVIGATION*/
     .navigation-list {
@@ -270,6 +266,20 @@
     color: #BDBBBC;
     }
     /*CATALOG*/
+    .page-catalog {
+    width: 1200px;
+    
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+    color: var(--white);
+    background-color: var(--white);
+    
+    margin: 0 40px;
+    }
     /*FORM*/
     .subtitle {
     font-weight: 700;
