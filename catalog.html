@@ -10,15 +10,15 @@
         <title class="title">SEDONA</title>
     </head>
     <body class="page-catalog">
-        <header class="header">
+        <header class="header ">
             <nav class="header-navigation">
                 <ul class="header-navigation-list">
-                    <li class="header-navigation-item"><a class="navigation-list-link active" href="index.html">Информация</a></li>
+                    <li class="header-navigation-item"><a class="navigation-list-link active" href="#">Информация</a></li>
                     <li class="header-navigation-item"><a class="navigation-list-link" href="#">Фото и видео</a></li>
-                    <li class="header-navigation-logo"><a href="index.html"><img src="image/logo.png" width="138px" height="70px" alt="Логотип"></a></li>
                     <li class="header-navigation-item"><a class="navigation-list-link" href="#">Карта штата</a></li>
-                    <li class="header-navigation-item"><a class="navigation-list-link" href="#">Гостиницы</a></li>
+                    <li class="header-navigation-item"><a class="navigation-list-link" href="catalog.html">Гостиницы</a></li>
                 </ul>
+                <div class="header-navigation-logo"><img src="image/logo.png" width="138px" height="70px" alt="Логотип"></div> 
             </nav>
         </header>
         <main class="main-catalog">
@@ -107,21 +107,29 @@
                 <a class="contacts-phone" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
             </section>
             <section class="social">
-                <ul class="social-list">
-                    <li class="social-list-item vk">
-                        <a class="social-button" href="#"><img src="image/twitter.svg" width="16.98" height="15.01" alt="Твитер"></a>
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a href="#">
+                            <img class="twitter" src="image/twitter.svg" width="17px" height="17px" alt="Твитер">
+                        </a>
                     </li>
-                    <li class="social-list-item fb">
-                        <a class="social-button" href="#"><img src="image/fb-icon.svg" width="16.98" height="15.01" alt="Фэйсбук"></a>
+                    <li class="social__item">
+                        <a href="#">
+                            <img class="facebook" src="image/fb-icon.svg" width="12px" height="22px" alt="Фэйсбук">
+                        </a>
                     </li>
-                    <li class="social-list-item youtube">
-                        <a class="social-button" href="#"><img src="image/youtube.svg" width="16.98" height="15.01" alt="Ютуб"></a>
+                    <li class="social__item">
+                        <a href="#">
+                            <img class="youtube" src="image/youtube.svg" width="20px" height="16px" alt="Ютуб">
+                        </a>
                     </li>
                 </ul>
             </section>
             <section class="copyright">
                 <p class="copyright-text">Website by</p>
-                <div class="copyright-logo"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="image/html-academy.svg" width="113.98" height="39.78" alt="Логотип HTML-academy"></a></div>
+                <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+                    <img class="html-academy" src="image/html-academy.svg" width="113.98px" height="39.78px" alt="Логотип HTML-academy">
+                </a>
             </section>
         </footer>
     </body>
