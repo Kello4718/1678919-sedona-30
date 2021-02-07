@@ -3,118 +3,108 @@
     <head>
         <link rel="icon" href="favicon.ico">
         <link rel="icon" href="image/favicon.svg" type="image/svg+xml">
-        <link rel="stylesheet" href="fonts/PTSans-Bold.woff2">
-        <link rel="stylesheet" href="fonts/PTSans-Bold.woff">
-        <link rel="stylesheet" href="fonts/PTSans.woff2">
-        <link rel="stylesheet" href="fonts/PTSans.woff">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
         <meta charset="utf-8">
         <title class="title">SEDONA</title>
     </head>
-    <body class="center">
-        <header class="main-header ">
-            <div class="header-logo"><img src="image/logo.png" width="138px" height="70px" alt="Логотип"></div>
+    <body class="page-body">
+        <header class="header ">
             <nav class="header-navigation">
-                <ul class="navigation-list">
-                    <li class="navigation-list-item"><a class="navigation-list-link active" href="#">Информация</a></li>
-                    <li class="navigation-list-item"><a class="navigation-list-link" href="#">Фото и видео</a></li>
-                    <li class="navigation-list-item"><a class="navigation-list-link" href="#">Карта штата</a></li>
-                    <li class="navigation-list-item"><a class="navigation-list-link" href="catalog.html">Гостиницы</a></li>
+                <ul class="header-navigation-list">
+                    <li class="header-navigation-item"><a class="navigation-list-link active" href="#">Информация</a></li>
+                    <li class="header-navigation-item"><a class="navigation-list-link" href="#">Фото и видео</a></li>
+                    <li class="header-navigation-item"><a class="navigation-list-link" href="#">Карта штата</a></li>
+                    <li class="header-navigation-item"><a class="navigation-list-link" href="catalog.html">Гостиницы</a></li>
                 </ul>
+                <div class="header-navigation-logo"><img src="image/logo.png" width="138px" height="70px" alt="Логотип"></div> 
             </nav>
         </header>
-        <main>
+        <main class="main main-grid">
             <section class="slogan">
-                <div class="slogan-background">
-                    <img src="image/background-photo.png" width="1200px" height="509px" alt="Седона">
-                </div>
-                <div class="slogan-white-mask">
-                    <img src="image/white-mask.png" width="1200px" height="57px" alt="Декорации фоновой картинки">
-                </div>
-                <div class="slogan-title">
-                    <img src="image/welcome-Sedona.svg" width="456.65px" height="350.88px" alt="Добро пожаловать Седона">
-                </div>
+                <img class="slogan-title" src="image/welcome-Sedona.svg" width="456.65px" height="350.88px" alt="Добро пожаловать Седона">
             </section>
             <section class="about">
-            <h2 class="about-title">Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
-            <p class="about-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+                <h2 class="about-title">Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
+                <p class="about-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
             </section>
-            <section class="reason">
-            <ul class="reason-list">
-                <li class="reason-list-item">
-                    <h2 class="reason-list-item-title">Настоящий городок</h2>
-                    <p class="reason-list-item-text">— №1 —</p>
-                    <p class="reason-list-item-text">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-                    <img src="image/picture-reason-one.jpg" width="800px" height="256px" alt="Гостиница">
-                        <ul class="recommendations-list">
-                            <li class="recommendations-list-item">
-                                    <img src="image/home.svg" width="74.69px" height="72px" alt="Домик">
-                                    <h2 class="recommendations-list-item-title">Жильё</h2>
-                                    <p class="recommendations-list-item-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-                            </li>
-                            <li class="recommendations-list-item">
-                                    <img src="image/hamburger.svg" width="75px" height="70px" alt="Гамбургер"   >
-                                    <h2 class="recommendations-list-item-title">Еда</h2>
-                                    <p class="recommendations-list-item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                            </li>
-                            <li class="recommendations-list-item">
-                                    <img src="image/present.svg" width="63.98px" height="76px" alt="Подарок">
-                                    <h2 class="recommendations-list-item-title">Сувениры</h2>
-                                    <p class="recommendations-list-item-text">Не только китайского, но и местного производства!</p>
-                            </li>
-                        </ul>
-                </li>
-                <li class="reason-list-item">
-                            <h2 class="reason-list-item-title">Там есть Мост дьявола</h2>
-                            <p class="reason-list-item-text">— №2 —</p>
-                            <p class="reason-list-item-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-                            <img src="image/picture-reason-two.jpg" width="800" height="256" alt="Каньон">
-                </li>
-                <li class="reason-list-item">
-                        <h2 class="reason-list-item-title">Небольшая площадь</h2>
-                        <p class="reason-list-item-text">— №3 —</p>
-                        <p class="reason-list-item-text">Все достопримечательности находятся очень близко</p>
-                </li>
-                <li class="reason-list-item">
-                    <h2 class="reason-list-item-title">Красивая дорога</h2>
-                    <p class="reason-list-item-text">— №4 —</p>
-                    <p class="reason-list-item-text">Ехать в седону из лас-вегаса совсем не скучно!</p>
-                </li>
-                <li class="reason-list-item">
-                    <h2 class="reason-list-item-title">Мало туристов</h2>
-                    <p class="reason-list-item-text">— №5 —</p>
-                    <p class="reason-list-item-text">Большинство едет в гранд каньон и толпится там</p>
-                </li>
-            </ul>
+            <section class="reasons-and-recommendations">
+                <ul class="reasons-and-recommendations__list">
+                    <li class="reasons__item reason-one grid-container-reason-one">
+                            <div class="container-reason-one">
+                                <h2 class="reasons__item-title title-one">Настоящий городок</h2>
+                                <p class="reasons__item-subtitle subtitle-one">— №1 —</p>
+                                <p class="reasons__item-text text-one">Седона - не аттракцион для туристов, там<br> течёт своя жизнь</p>
+                            </div>
+                            <div class="reason-one-image"><img src="image/picture-reason-one.jpg" width="800px" height="256px" alt="Гостиница"></div>
+                    </li>
+                        
+                    <li class="recommendations__item house">
+                        <img class="item-house" src="image/home.svg" width="74.69px" height="72px" alt="Домик">
+                        <h2 class="recommendations__item-title title-house">Жильё</h2>
+                        <p class="recommendations__item-text text-house">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                    </li>
+                    <li class="recommendations__item food">
+                        <img class="item-food" src="image/hamburger.svg" width="75px" height="70px" alt="Гамбургер"   >
+                        <h2 class="recommendations__item-title title-food">Еда</h2>
+                        <p class="recommendations__item-text text-food">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                    </li>
+                    <li class="recommendations__item suvenirs">
+                        <img class="item-suvenirs" src="image/present.svg" width="63.98px" height="76px" alt="Подарок">
+                        <h2 class="recommendations__item-title title-suvenirs">Сувениры</h2>
+                        <p class="recommendations__item-text text-suvenirs">Не только китайского, но и местного производства!</p>
+                     </li>
+                    <li class="reasons__item reason-two grid-container-reason-two">
+                            <div class="container-reason-two">
+                                <h2 class="reasons__item_title reason-two">Там есть Мост дьявола</h2>
+                                <p class="reasons__item-subtitle subtitle-two">— №2 —</p>
+                                <p class="reasons__item-text text-two">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                            </div>
+                            <img class="reason-two-image" src="image/picture-reason-two.jpg" width="800" height="256" alt="Каньон">
+                        </li>
+                    <li class="reason-list-item reason-three reasons-three-four-five">
+                        <h2 class="reasons__item_title  title-three-four-five">Небольшая площадь</h2>
+                        <p class="reasons__item-subtitle subtitle-three">— №3 —</p>
+                        <p class="reasons__item-text text-three">Все достопримечательности находятся очень близко</p>
+                    </li>
+                    <li class="reason-list-item reason-four reasons-three-four-five">
+                        <h2 class="reasons__item_title title-three-four-five">Красивая дорога</h2>
+                        <p class="reasons__item-subtitle subtitle-four">— №4 —</p>
+                        <p class="reasons__item-text text-four">Ехать в седону из лас-вегаса совсем не скучно!</p>
+                    </li>
+                    <li class="reason-list-item reason-five reasons-three-four-five">
+                        <h2 class="reasons__item_title title-three-four-five">Мало туристов</h2>
+                        <p class="reasons__item-subtitle subtitle-five">— №5 —</p>
+                        <p class="reasons__item-text text-five">Большинство едет в гранд каньон и толпится там</p>
+                    </li>
+                </ul>
             </section>
             <section class="search-hotel">
-                <h2 class="search-hotel-title">Заинтересовались?</h2>
-                <p class="search-hotel-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-                <button class="button button-search hidden">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
-                <img src="image/map.png" width="1199px" height="594px" alt="Карта">
+                <h2 class="search-hotel__title">Заинтересовались?</h2>
+                <p class="search-hotel__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+                <button class="button-search-hotel button-search-hotel_text hidden">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
             </section>
-            <section class="search-hotel-form">
-                <form method="get" action="https://echo.htmlacademy.ru/">
-                    <p class="search-hotel-form-text">
-                        <label for="check-in">Дата заезда:</label>
-                        <input class="check-in" type="text" name="check-in" id="check-in" value="24 АПРЕЛЯ 2017">
-                    </p>
-                    <p class="search-hotel-form-text">
-                    <label for="check-out">Дата выезда:</label>
-                    <input class="check-out" type="text" name="check-out" id="check-out" value="4 ИЮЛЯ 2017">
-                    </p>    
-                    <p class="search-hotel-form-text">
-                    <label for="adult">Взрослые:</label>
-                    <input class="button button-minus" type="button" value="-" name="-">
-                    <input class="adult" type="text" name="adult" id="adult" value="2">
-                    <input class="button button-plus" type="button" value="+" name="+">
-                    <label for="children">Дети:</label>
-                    <input class="button button-minus" type="button" value="-" name="-">
-                    <input class="children" type="text" name="children" id="children" value="0">
-                    <input class="button button-plus" type="button" value="+" name="+">
-                    </p>
-                    <input class="button button-to-find" type="submit" name="to-find" value="Найти">
+            <section class="search-hotel-container">
+                <img src="image/map.png" width="1199px" height="594px" alt="Карта">
+                <form class="search-hotel-form" method="get" action="https://echo.htmlacademy.ru/">
+                    <label>Дата заезда:
+                        <input class="check-in" type="text" name="check-in" value="24 АПРЕЛЯ 2017"><br>
+                    </label>
+                    <label>Дата выезда:
+                        <input class="check-out" type="text" name="check-out" value="4 ИЮЛЯ 2017"><br>
+                    </label>
+                    <label>Взрослые:
+                        <input class="button-minus" type="button" value="-" name="-">
+                        <input class="adult" type="text" name="adult" id="adult" value="2">
+                        <input class="button-plus" type="button" value="+" name="+">
+                    </label>
+                    <label>Дети:
+                        <input class="button-minus" type="button" value="-" name="-">
+                        <input class="children" type="text" name="children" id="children" value="0">
+                        <input class="button-plus" type="button" value="+" name="+">
+                    </label>
+                    <input class="button-to-find" type="submit" name="to-find" value="Найти">
                 </form>
             </section>
         </main>
@@ -124,26 +114,29 @@
                 <a class="contacts-phone" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
             </section>
             <section class="social">
-                <ul class="social-list">
-                    <li class="social-list-item vk">
-                        <a class="social-button" href="#"><img src="image/twitter.svg" width="16.98px" height="15.01px" alt="Твитер"></a>
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a href="#">
+                            <img class="twitter" src="image/twitter.svg" width="17px" height="17px" alt="Твитер">
+                        </a>
                     </li>
-                    <li class="social-list-item fb">
-                        <a class="social-button" href="#"><img src="image/fb-icon.svg" width="16.98px" height="15.01px" alt="Фэйсбук"></a>
+                    <li class="social__item">
+                        <a href="#">
+                            <img class="facebook" src="image/fb-icon.svg" width="12px" height="22px" alt="Фэйсбук">
+                        </a>
                     </li>
-                    <li class="social-list-item youtube">
-                        <a class="social-button" href="#"><img src="image/youtube.svg" width="16.98px" height="15.01px" alt="Ютуб"></a>
+                    <li class="social__item">
+                        <a href="#">
+                            <img class="youtube" src="image/youtube.svg" width="20px" height="16px" alt="Ютуб">
+                        </a>
                     </li>
                 </ul>
             </section>
             <section class="copyright">
                 <p class="copyright-text">Website by</p>
-                <div class="copyright-logo">
-                    <a href="https://htmlacademy.ru/intensive/htmlcss">
-                        <img src="/image/html-academy.svg" width="113.98px" height="39.78px" alt="Логотип HTML-academy">
-                    </a>
-                </div>
+                <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+                    <img class="html-academy" src="image/html-academy.svg" width="113.98px" height="39.78px" alt="Логотип HTML-academy">
+                </a>
             </section>
         </footer>
     </body>
-</html>
