@@ -208,8 +208,6 @@
     }
     
     .reason-two-image {
-    width: 800px;
-    height: 256px;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     }
