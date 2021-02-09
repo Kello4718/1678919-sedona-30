@@ -10,15 +10,25 @@
         <title class="title">SEDONA</title>
     </head>
     <body class="page-catalog">
-        <header class="header ">
-            <nav class="header-navigation">
-                <ul class="header-navigation-list">
-                    <li class="header-navigation-item"><a class="navigation-list-link active" href="#">Информация</a></li>
-                    <li class="header-navigation-item"><a class="navigation-list-link" href="#">Фото и видео</a></li>
-                    <li class="header-navigation-item"><a class="navigation-list-link" href="#">Карта штата</a></li>
-                    <li class="header-navigation-item"><a class="navigation-list-link" href="catalog.html">Гостиницы</a></li>
+        <header class="header">
+            <nav class="header__navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="index.html">Информация</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">Фото и видео</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">Карта штата</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link active" href="#">Гостиницы</a>
+                    </li>
                 </ul>
-                <div class="header-navigation-logo"><img src="image/logo.png" width="138px" height="70px" alt="Логотип"></div> 
+                <div class="header__logo">
+                    <img src="image/logo.png" width="138px" height="70px" alt="Логотип">
+                </div> 
             </nav>
         </header>
         <main class="main-catalog">
@@ -27,25 +37,38 @@
                     <fieldset class="infrastructure">
                         <legend class="infastructure__subtitle">Инфаструктура:</legend>
                         <ul class="infrastructure__list">
-                            <li class="infrastructure__item_pool"><input type="checkbox" name="Pool" checked>Бассейн</li>
-                            <li class="infrastructure__item_parking"><input type="checkbox" name="Parking" disabled checked>Парковка</li>
-                            <li class="infrastructure__item_wi-fi"><input type="checkbox" name="Wi-Fi" disabled>Wi-Fi</li>
+                            <li class="infrastructure__item_pool">
+                                <input type="checkbox" name="Pool" checked>Бассейн
+                            </li>
+                            <li class="infrastructure__item_parking">
+                                <input type="checkbox" name="Parking" disabled checked>Парковка
+                            </li>
+                            <li class="infrastructure__item_wi-fi">
+                                <input type="checkbox" name="Wi-Fi" disabled>Wi-Fi
+                            </li>
                         </ul>
                     </fieldset>
                     <fieldset class="type-housing">
                         <legend class="type-housing__subtitle">Тип жилья:</legend>
                         <ul class="type-housing__list">
-                            <li class="type-housing__item_hotel"><input type="checkbox" name="Hotel" checked>Гостиница</li>
-                            <li class="type-housing__item_motel"><input type="checkbox" name="Motel" checked>Мотель</li>
-                            <li class="type-housing__item_appartments"><input type="checkbox" name="Appartments" checked>Апартаменты</li>
+                            <li class="type-housing__item_hotel">
+                                <input type="checkbox" name="Hotel" checked>Гостиница
+                            </li>
+                            <li class="type-housing__item_motel">
+                                <input type="checkbox" name="Motel" checked>Мотель
+                            </li>
+                            <li class="type-housing__item_appartments">
+                                <input type="checkbox" name="Appartments" checked>Апартаменты
+                            </li>
                         </ul>
                     </fieldset>
                     <fieldset class="fieldset cost-per-day">
-                        <legend class="cost-per-day__subtitle">Стоимость в сутки (Р):</legend>
-                        <span class="subtitle-min">ОТ 0 </span>
-                        <span class="subtitle-max">ДО 3000</span>
+                        <div class="cost-per-day__container">
+                            <legend class="cost-per-day__subtitle">Стоимость в сутки (Р):</legend>
+                            <input class="button-show" type="submit" value="Показать" name="show">
+                        </div>
                     </fieldset>
-                    <input class="button button-show" type="submit" value="Показать" name="show">
+                    
                 </form>
             </section>
             <section class="result">
@@ -72,7 +95,7 @@
                         <img class="image-star-two" src="image/star.svg" width="18px" height="17px" alt="Звезда">
                         <img class="image-star-three" src="image/star.svg" width="18px" height="17px" alt="Звезда">
                         <img class="image-star-four" src="image/star.svg" width="18px" height="17px" alt="Звезда">
-                        <div class="result-raiting">РЕЙТИНГ:8,5</div>
+                        <div class="result-raiting"><p class="result-raiting-text">РЕЙТИНГ:8,5</p></div>
                     </li>
                     <li class="result__found-item">
                         <h3 class="result__found-title">Desert Quail Inn</h3>
@@ -84,7 +107,7 @@
                         <img class="image-star-one" src="image/star.svg" width="18px" height="17px" alt="Звезда">
                         <img class="image-star-two" src="image/star.svg" width="18px" height="17px" alt="Звезда">
                         <img class="image-star-three" src="image/star.svg" width="18px" height="17px" alt="Звезда">
-                        <div class="result-raiting">РЕЙТИНГ:8,9</div>
+                        <div class="result-raiting"><p class="result-raiting-text">РЕЙТИНГ:8,9</p></div>
                     </li>
                     <li class="result__found-item">
                         <h3 class="result__found-title">Villas at Poco Diablo</h3>
@@ -95,7 +118,7 @@
                         <button class="button-result-booking">Забронировать</button>
                         <img class="image-star-one" src="image/star.svg" width="18px" height="17px" alt="Звезда">
                         <img class="image-star-two" src="image/star.svg" width="18px" height="17px" alt="Звезда">
-                        <div class="result-raiting">РЕЙТИНГ:9,2</div>
+                        <div class="result-raiting"><p class="result-raiting-text">РЕЙТИНГ:9,2</p></div>
 
                     </li>
                 </ul>
