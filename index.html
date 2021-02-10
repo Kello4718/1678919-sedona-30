@@ -1,152 +1,159 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-<head>
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="image/favicon.svg" type="image/svg+xml">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <meta charset="utf-8">
-    <title class="title">SEDONA</title>
-</head>
-<body class="page-body">
-    <header class="header ">
-        <nav class="header__navigation">
-            <ul class="navigation__list">
-                <li class="navigation__item">
-                    <a class="navigation__link active" href="#">Информация</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="#">Фото и видео</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="#">Карта штата</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="catalog.html">Гостиницы</a>
-                </li>
-            </ul>
-            <div class="header__logo">
-                <img src="image/logo.png" width="138px" height="70px" alt="Логотип">
-            </div>
-        </nav>
-    </header>
-    <main class="main main-grid">
-        <section class="slogan">
-            <img class="slogan__title" src="image/welcome-Sedona.svg" width="456.65px" height="350.88px" alt="Добро пожаловать Седона">
-        </section>
-        <section class="about">
-            <h2 class="about__title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
-            <p class="about__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        </section>
-        <section class="reasons-and-recommendations">
-            <ul class="reasons-and-recommendations__list">
-                <li class="reasons__item reason-one">
-                    <div class="container-reason-one">
-                        <h2 class="reasons__item-title title-one">Настоящий<br> городок</h2>
-                        <p class="reasons__item-subtitle subtitle-one">— №1 —</p>
-                        <p class="reasons__item-text text-one">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-                    </div>
-                    <div class="reason-one-image">
-                        <img src="image/picture-reason-one.jpg" width="800px" height="256px" alt="Гостиница">
-                    </div>
-                </li>
+    <head>
+        <link rel="icon" href="favicon.ico">
+        <link rel="icon" href="image/favicon.svg" type="image/svg+xml">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <meta charset="utf-8">
+        <title class="title">SEDONA</title>
+    </head>
+    <body class="page-catalog">
+        <header class="header">
+            <nav class="header__navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item info">
+                        <a class="navigation__link" href="index.html">Информация</a>
+                    </li>
+                    <li class="navigation__item media">
+                        <a class="navigation__link" href="#">Фото и видео</a>
+                    </li>
+                    <li class="navigation__item map">
+                        <a class="navigation__link" href="#">Карта штата</a>
+                    </li>
+                    <li class="navigation__item hotels">
+                        <a class="navigation__link active" href="#">Гостиницы</a>
+                    </li>
+                </ul>
+                <div class="header__logo">
+                    <img src="image/logo.png" width="138px" height="70px" alt="Логотип">
+                </div> 
+            </nav>
+        </header>
+        <main class="main-catalog">
+            <section class="filter-container">
+                <form class="filter" method="get" action="https://echo.htmlacademy.ru/">
+                    <fieldset class="infrastructure">
+                        <legend class="infastructure__subtitle">Инфаструктура:</legend>
+                        <ul class="infrastructure__list">
+                            <li class="infrastructure__item_pool">
+                                <input type="checkbox" name="Pool" checked>Бассейн
+                            </li>
+                            <li class="infrastructure__item_parking">
+                                <input type="checkbox" name="Parking" disabled checked>Парковка
+                            </li>
+                            <li class="infrastructure__item_wi-fi">
+                                <input type="checkbox" name="Wi-Fi" disabled>Wi-Fi
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="type-housing">
+                        <legend class="type-housing__subtitle">Тип жилья:</legend>
+                        <ul class="type-housing__list">
+                            <li class="type-housing__item_hotel">
+                                <input type="checkbox" name="Hotel" checked>Гостиница
+                            </li>
+                            <li class="type-housing__item_motel">
+                                <input type="checkbox" name="Motel" checked>Мотель
+                            </li>
+                            <li class="type-housing__item_appartments">
+                                <input type="checkbox" name="Appartments" checked>Апартаменты
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="fieldset cost-per-day">
+                        <div class="cost-per-day__container">
+                            <legend class="cost-per-day__subtitle">Стоимость в сутки (Р):</legend>
+                            <input class="button-show" type="submit" value="Показать" name="show">
+                        </div>
+                    </fieldset>
+                    
+                </form>
+            </section>
+            <section class="result">
+                <div class="header-result header-result-grid">
+                    <h2 class="result-found">Найдено:3</h2>
+                    <p class="sorting">Сортировка:</p>
+                    <ul class="result-sorting-list result-sorting-list-grid">
+                        <li class="result-sorting-list-item price"><a class="active" href="#">По цене</a></li>
+                        <li class="result-sorting-list-item type"><a href="#">По типу</a></li>
+                        <li class="result-sorting-list-item raiting"><a href="#">По рейтингу</a></li>
+                    </ul>
+                    <a class="triangle-top" href="#"><img src="image/triangle-top.svg" width="11px" height="10px" alt="Треугольник-вверх"></a>
+                    <a class="triangle-bottom active" href="#"><img src="image/triangle-bottom.svg" width="11px" height="10px" alt="Треугольник-вниз"></a>
+                </div>
+                <ul class="result__found-list">
+                    <li class="result__found-item">
+                        <h3 class="result__found-title">Amara Resort & Spa</h3>
+                        <img class="image-hotel" src="image/hotel.jpg" width="135px" height="90" alt="Гостиница">
+                        <p class="result__found-text">Гостиница</p>
+                        <p class="result__found-min">ОТ 4000 Р.</p>
+                        <button class="button-result-more">Подробнее</button>
+                        <button class="button-result-booking">Забронировать</button>
+                        <img class="image-star-one" src="image/star.svg" width="18px" height="17px" alt="Звезда">
+                        <img class="image-star-two" src="image/star.svg" width="18px" height="17px" alt="Звезда">
+                        <img class="image-star-three" src="image/star.svg" width="18px" height="17px" alt="Звезда">
+                        <img class="image-star-four" src="image/star.svg" width="18px" height="17px" alt="Звезда">
+                        <div class="result-raiting"><p class="result-raiting-text">РЕЙТИНГ:8,5</p></div>
+                    </li>
+                    <li class="result__found-item">
+                        <h3 class="result__found-title">Desert Quail Inn</h3>
+                        <img class="image-motel" src="image/motel.jpg" width="135px" height="90" alt="Мотель">
+                        <p class="result__found-text">Мотель</p>
+                        <p class="result__found-min">ОТ 3000 Р.</p>
+                        <button class="button-result-more">Подробнее</button>
+                        <button class="button-result-booking">Забронировать</button>
+                        <img class="image-star-one" src="image/star.svg" width="18px" height="17px" alt="Звезда">
+                        <img class="image-star-two" src="image/star.svg" width="18px" height="17px" alt="Звезда">
+                        <img class="image-star-three" src="image/star.svg" width="18px" height="17px" alt="Звезда">
+                        <div class="result-raiting"><p class="result-raiting-text">РЕЙТИНГ:8,9</p></div>
+                    </li>
+                    <li class="result__found-item">
+                        <h3 class="result__found-title">Villas at Poco Diablo</h3>
+                        <img class="image-apartment" src="image/apartment.jpg" width="135px" height="90" alt="Апартаменты">
+                        <p class="result__found-text">Апартаменты</p>
+                        <p class="result__found-min">ОТ 2000 Р.</p>
+                        <button class="button-result-more">Подробнее</button>
+                        <button class="button-result-booking">Забронировать</button>
+                        <img class="image-star-one" src="image/star.svg" width="18px" height="17px" alt="Звезда">
+                        <img class="image-star-two" src="image/star.svg" width="18px" height="17px" alt="Звезда">
+                        <div class="result-raiting"><p class="result-raiting-text">РЕЙТИНГ:9,2</p></div>
 
-                <li class="recommendations__item">
-                    <img class="item-house" src="image/home.svg" width="74.69px" height="72px" alt="Домик">
-                    <h2 class="recommendations__item-title title-house">Жильё</h2>
-                    <p class="recommendations__item-text text-house">Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
-                </li>
-                <li class="recommendations__item">
-                    <img class="item-food" src="image/hamburger.svg" width="75px" height="70px" alt="Гамбургер"   >
-                    <h2 class="recommendations__item-title title-food">Еда</h2>
-                    <p class="recommendations__item-text text-food">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
-                </li>
-                <li class="recommendations__item">
-                    <img class="item-suvenirs" src="image/present.svg" width="63.98px" height="76px" alt="Подарок">
-                    <h2 class="recommendations__item-title title-suvenirs">Сувениры</h2>
-                    <p class="recommendations__item-text text-suvenirs">Не только китайского, но и местного<br> производства!</p>
-                </li>
-                <li class="reasons__item reason-two">
-                    <div class="container-reason-two">
-                        <h2 class="reasons__item-title title-two">Там есть<br> Мост дьявола</h2>
-                        <p class="reasons__item-subtitle subtitle-two">— №2 —</p>
-                        <p class="reasons__item-text text-two">Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
-                    </div>
-                    <img class="reason-two-image" src="image/picture-reason-two.jpg" width="800px" height="256px" alt="Каньон">
-                </li>
-                <li class="reason-list-item reason-three reasons-three-four-five">
-                    <h2 class="reasons__item-title  title-three">Небольшая<br> площадь</h2>
-                    <p class="reasons__item-subtitle subtitle-three">— №3 —</p>
-                    <p class="reasons__item-text text-three">Все достопримечательности<br> находятся очень близко</p>
-                </li>
-                <li class="reason-list-item reason-four reasons-three-four-five">
-                    <h2 class="reasons__item-title title-four">Красивая<br> дорога</h2>
-                    <p class="reasons__item-subtitle subtitle-four">— №4 —</p>
-                    <p class="reasons__item-text text-four">Ехать в седону из лас-вегаса совсем<br> не скучно!</p>
-                </li>
-                <li class="reason-list-item reason-five reasons-three-four-five">
-                    <h2 class="reasons__item-title title-five">Мало<br> туристов</h2>
-                    <p class="reasons__item-subtitle subtitle-five">— №5 —</p>
-                    <p class="reasons__item-text text-five">Большинство едет в гранд каньон<br> и толпится там</p>
-                </li>
-            </ul>
-        </section>
-        <section class="search-hotel">
-            <h2 class="search-hotel__title">Заинтересовались?</h2>
-            <p class="search-hotel__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-            <button class="button-search-hotel hidden">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
-        </section>
-        <section class="search-hotel-container">
-            <img src="image/map.png" width="1199px" height="594px" alt="Карта">
-            <form class="search-hotel-form" method="get" action="https://echo.htmlacademy.ru/">
-                <label class="check-in-label">Дата заезда:</label>
-                <input class="check-in" type="text" name="check-in" value="24 АПРЕЛЯ 2017">
-                <img class="check-in-calendar" src="image/calendar.svg" width="21px" height="23px" alt="Календарь">
-                <label class="check-out-label">Дата выезда:</label>
-                <input class="check-out" type="text" name="check-out" value="4 ИЮЛЯ 2017">
-                <img class="check-out-calendar" src="image/calendar.svg" width="21px" height="23px" alt="Календарь">
-                <label class="adult-label" for="adult">Взрослые:</label>
-                <input class="button-minus-adult" type="button" value="-" name="-">
-                <input class="adult" type="text" name="adult" id="adult" value="2">
-                <input class="button-plus-adult" type="button" value="+" name="+">
-                <label class="children-label" for="children">Дети:</label>
-                <input class="button-minus-children" type="button" value="-" name="-">
-                <input class="children" type="text" name="children" id="children" value="0">
-                <input class="button-plus-children" type="button" value="+" name="+">
-                <input class="button-to-find" type="submit" name="to-find" value="Найти">
-            </form>
-        </section>
-    </main>
-    <footer class="footer">
-        <section class="contacts">
-            <p class="contacts-text">#visitSEDONA</p>
-            <a class="contacts-phone" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
-        </section>
-        <section class="social">
-            <ul class="social__list">
-                <li class="social__item">
-                    <a href="#">
-                        <img class="twitter" src="image/twitter.svg" width="17px" height="17px" alt="Твитер">
-                    </a>
-                </li>
-                <li class="social__item">
-                    <a href="#">
-                        <img class="facebook" src="image/fb-icon.svg" width="12px" height="22px" alt="Фэйсбук">
-                    </a>
-                </li>
-                <li class="social__item">
-                    <a href="#">
-                        <img class="youtube" src="image/youtube.svg" width="20px" height="16px" alt="Ютуб">
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <section class="copyright">
-        <p class="copyright-text">Website by</p>
-            <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-                <img class="html-academy" src="image/html-academy.svg" width="113.98px" height="39.78px" alt="Логотип HTML-academy">
-            </a>
-        </section>
-    </footer>
-</body>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer class="footer">
+            <section class="contacts">
+                <p class="contacts-text">#visitSEDONA</p>
+                <a class="contacts-phone" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
+            </section>
+            <section class="social">
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a href="#">
+                            <img class="twitter" src="image/twitter.svg" width="17px" height="17px" alt="Твитер">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#">
+                            <img class="facebook" src="image/fb-icon.svg" width="12px" height="22px" alt="Фэйсбук">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#">
+                            <img class="youtube" src="image/youtube.svg" width="20px" height="16px" alt="Ютуб">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="copyright">
+                <p class="copyright-text">Website by</p>
+                <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+                    <img class="html-academy" src="image/html-academy.svg" width="113.98px" height="39.78px" alt="Логотип HTML-academy">
+                </a>
+            </section>
+        </footer>
+    </body>
+</html>
