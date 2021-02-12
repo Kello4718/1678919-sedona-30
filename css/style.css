@@ -457,6 +457,8 @@
     .check-in-calendar {
     width: 21px;
     height: 23px;
+      
+    display:none;
 
     grid-column: 10 / 11;
     grid-row: 2 / 3;
@@ -485,6 +487,8 @@
     .check-out-calendar {
     width: 21px;
     height: 23px;
+      
+    display:none;
     
     grid-column: 10 / 11;
     grid-row: 4 / 5;
