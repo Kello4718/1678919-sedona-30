@@ -13,16 +13,16 @@
         <header class="header">
             <nav class="header__navigation">
                 <ul class="navigation__list">
-                    <li class="navigation__item">
+                    <li class="navigation__item info">
                         <a class="navigation__link" href="index.html">Информация</a>
                     </li>
-                    <li class="navigation__item">
+                    <li class="navigation__item media">
                         <a class="navigation__link" href="#">Фото и видео</a>
                     </li>
-                    <li class="navigation__item">
+                    <li class="navigation__item map">
                         <a class="navigation__link" href="#">Карта штата</a>
                     </li>
-                    <li class="navigation__item">
+                    <li class="navigation__item hotels">
                         <a class="navigation__link active" href="#">Гостиницы</a>
                     </li>
                 </ul>
@@ -72,53 +72,81 @@
                 </form>
             </section>
             <section class="result">
-                <div class="header-result header-result-grid">
-                    <h2 class="result-found">Найдено:3</h2>
-                    <p class="sorting">Сортировка:</p>
-                    <ul class="result-sorting-list result-sorting-list-grid">
-                        <li class="result-sorting-list-item price"><a class="active" href="#">По цене</a></li>
-                        <li class="result-sorting-list-item type"><a href="#">По типу</a></li>
-                        <li class="result-sorting-list-item raiting"><a href="#">По рейтингу</a></li>
+                <div class="header-result">
+                    <h2 class="header-result__title">Найдено:3</h2>
+                    <p class="header-result__text">Сортировка:</p>
+                    <ul class="header-result__list">
+                        <li class="header-result__item price">
+                            <a class="header-result__link active" href="#">По цене</a>
+                        </li>
+                        <li class="header-result__item type">
+                            <a class="header-result__link" href="#">По типу</a>
+                        </li>
+                        <li class="header-result__item raiting">
+                            <a class="header-result__link" href="#">По рейтингу</a>
+                        </li>
                     </ul>
-                    <a class="triangle-top" href="#"><img src="image/triangle-top.svg" width="11px" height="10px" alt="Треугольник-вверх"></a>
-                    <a class="triangle-bottom active" href="#"><img src="image/triangle-bottom.svg" width="11px" height="10px" alt="Треугольник-вниз"></a>
+                    <a class="header-result__triangle-top" href="#">
+                        <img src="image/triangle-top.svg" width="11px" height="10px" alt="Треугольник-вверх">
+                    </a>
+                    <a class="header-result__triangle-bottom active" href="#">
+                        <img src="image/triangle-bottom.svg" width="11px" height="10px" alt="Треугольник-вниз">
+                    </a>
                 </div>
-                <ul class="result__found-list">
-                    <li class="result__found-item">
-                        <h3 class="result__found-title">Amara Resort & Spa</h3>
-                        <img class="image-hotel" src="image/hotel.jpg" width="135px" height="90" alt="Гостиница">
-                        <p class="result__found-text">Гостиница</p>
-                        <p class="result__found-min">ОТ 4000 Р.</p>
-                        <button class="button-result-more">Подробнее</button>
-                        <button class="button-result-booking">Забронировать</button>
-                        <img class="image-star-one" src="image/star.svg" width="18px" height="17px" alt="Звезда">
-                        <img class="image-star-two" src="image/star.svg" width="18px" height="17px" alt="Звезда">
-                        <img class="image-star-three" src="image/star.svg" width="18px" height="17px" alt="Звезда">
-                        <img class="image-star-four" src="image/star.svg" width="18px" height="17px" alt="Звезда">
-                        <div class="result-raiting"><p class="result-raiting-text">РЕЙТИНГ:8,5</p></div>
+                <ul class="result-found__list">
+                    <li class="result-found__item">
+                        <div class="left-part-of-flexbox">
+                            <h3 class="result-found__title">Amara Resort & Spa</h3>
+                            <img class="image-hotel" src="image/hotel.jpg" width="135px" height="90" alt="Гостиница">
+                            <p class="result-found__text">Гостиница</p>
+                            <p class="result-found__min">ОТ 4000 Р.</p>
+                            <button class="button-result-more">Подробнее</button>
+                            <button class="button-result-booking">Забронировать</button>
+                        </div>
+                        <div class="right-part-of-flexbox">
+                            <img class="image-star-one" src="image/star.svg" width="18px" height="17px" alt="Звезда">
+                            <img class="image-star-two" src="image/star.svg" width="18px" height="17px" alt="Звезда">
+                            <img class="image-star-three" src="image/star.svg" width="18px" height="17px" alt="Звезда">
+                            <img class="image-star-four" src="image/star.svg" width="18px" height="17px" alt="Звезда">
+                            <div class="result-found__raiting">
+                                <p class="result-found__raiting-text">РЕЙТИНГ:8,5</p>
+                            </div>
+                        </div>
                     </li>
-                    <li class="result__found-item">
-                        <h3 class="result__found-title">Desert Quail Inn</h3>
-                        <img class="image-motel" src="image/motel.jpg" width="135px" height="90" alt="Мотель">
-                        <p class="result__found-text">Мотель</p>
-                        <p class="result__found-min">ОТ 3000 Р.</p>
-                        <button class="button-result-more">Подробнее</button>
-                        <button class="button-result-booking">Забронировать</button>
-                        <img class="image-star-one" src="image/star.svg" width="18px" height="17px" alt="Звезда">
-                        <img class="image-star-two" src="image/star.svg" width="18px" height="17px" alt="Звезда">
-                        <img class="image-star-three" src="image/star.svg" width="18px" height="17px" alt="Звезда">
-                        <div class="result-raiting"><p class="result-raiting-text">РЕЙТИНГ:8,9</p></div>
+                    <li class="result-found__item">
+                        <div class="left-part-of-flexbox">
+                            <h3 class="result-found__title">Desert Quail Inn</h3>
+                            <img class="image-motel" src="image/motel.jpg" width="135px" height="90" alt="Мотель">
+                            <p class="result-found__text">Мотель</p>
+                            <p class="result-found__min">ОТ 3000 Р.</p>
+                            <button class="button-result-more">Подробнее</button>
+                            <button class="button-result-booking">Забронировать</button>
+                        </div>
+                        <div class="right-part-of-flexbox">
+                            <img class="image-star-one" src="image/star.svg" width="18px" height="17px" alt="Звезда">
+                            <img class="image-star-two" src="image/star.svg" width="18px" height="17px" alt="Звезда">
+                            <img class="image-star-three" src="image/star.svg" width="18px" height="17px" alt="Звезда">
+                            <div class="result-found__raiting">
+                            <p class="result-found__raiting-text">РЕЙТИНГ:8,9</p>
+                            </div>
+                        </div>
                     </li>
-                    <li class="result__found-item">
-                        <h3 class="result__found-title">Villas at Poco Diablo</h3>
-                        <img class="image-apartment" src="image/apartment.jpg" width="135px" height="90" alt="Апартаменты">
-                        <p class="result__found-text">Апартаменты</p>
-                        <p class="result__found-min">ОТ 2000 Р.</p>
-                        <button class="button-result-more">Подробнее</button>
-                        <button class="button-result-booking">Забронировать</button>
-                        <img class="image-star-one" src="image/star.svg" width="18px" height="17px" alt="Звезда">
-                        <img class="image-star-two" src="image/star.svg" width="18px" height="17px" alt="Звезда">
-                        <div class="result-raiting"><p class="result-raiting-text">РЕЙТИНГ:9,2</p></div>
+                    <li class="result-found__item">
+                        <div class="left-part-of-flexbox">
+                            <h3 class="result-found__title">Villas at Poco Diablo</h3>
+                            <img class="image-apartment" src="image/apartment.jpg" width="135px" height="90" alt="Апартаменты">
+                            <p class="result-found__text">Апартаменты</p>
+                            <p class="result-found__min">ОТ 2000 Р.</p>
+                            <button class="button-result-more">Подробнее</button>
+                            <button class="button-result-booking">Забронировать</button>
+                        </div>
+                        <div class="right-part-of-flexbox">
+                            <img class="image-star-one" src="image/star.svg" width="18px" height="17px" alt="Звезда">
+                            <img class="image-star-two" src="image/star.svg" width="18px" height="17px" alt="Звезда">
+                            <div class="result-found__raiting">
+                                <p class="result-found__raiting-text">РЕЙТИНГ:9,2</p>
+                            </div>
+                        </div>
 
                     </li>
                 </ul>
