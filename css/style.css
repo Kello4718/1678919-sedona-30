@@ -798,7 +798,7 @@
     grid-template-columns: 72px 135px 119px 136px 347px 317px 73px;
     grid-template-rows: 26.5px 190.5px;
 
-    background-image: url(image/background-filter-form.png);
+    background-image: url(../image/background-filter-form.png);
     }
     /*INFRASTRUCTURE*/
     .infrastructure {
