@@ -124,8 +124,8 @@
     width: 1200px;
     height: 509px;
 
-    background-image: url(/image/white-mask.png),
-                      url(/image/background-photo.png);
+    background-image: url(../image/white-mask.png),
+                      url(../image/background-photo.png);
                       
     background-repeat: no-repeat;
     background-position: bottom, center;
