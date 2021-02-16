@@ -9,12 +9,12 @@
     <meta charset="utf-8">
     <title class="title">SEDONA</title>
 </head>
-<body class="page-index">
-    <header class="header ">
+<body class="page-index container-position">
+    <header class="header">
         <nav class="header__navigation">
             <ul class="navigation__list">
                 <li class="navigation__item info">
-                    <a class="navigation__link active" href="#">Информация</a>
+                    <a class="navigation__link checked" href="#">Информация</a>
                 </li>
                 <li class="navigation__item media">
                     <a class="navigation__link" href="#">Фото и видео</a>
@@ -33,7 +33,8 @@
     </header>
     <main class="main main-grid">
         <section class="slogan">
-            <img class="slogan__title" src="image/welcome-Sedona.svg" width="456.65px" height="350.88px" alt="Добро пожаловать Седона">
+            <img class="slogan__title" src="image/welcome-Sedona.svg" width="457px" height="351px"
+                 alt="Добро пожаловать Седона">
         </section>
         <section class="about">
             <h2 class="about__title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
@@ -45,7 +46,7 @@
                     <div class="container-reason-one">
                         <h2 class="reasons__item-title title-one">Настоящий<br> городок</h2>
                         <p class="reasons__item-subtitle subtitle-one">— №1 —</p>
-                        <p class="reasons__item-text text-one">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+                        <p class="reasons__item-text text-one">Седона - не аттракцион для туристов, там<br> течёт своя жизнь</p>
                     </div>
                     <div class="reason-one-image">
                         <img src="image/picture-reason-one.jpg" width="800px" height="256px" alt="Гостиница">
@@ -53,17 +54,14 @@
                 </li>
 
                 <li class="recommendations__item">
-                    <img class="item-house" src="image/home.svg" width="74.69px" height="72px" alt="Домик">
                     <h2 class="recommendations__item-title title-house">Жильё</h2>
                     <p class="recommendations__item-text text-house">Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
                 </li>
                 <li class="recommendations__item">
-                    <img class="item-food" src="image/hamburger.svg" width="75px" height="70px" alt="Гамбургер"   >
                     <h2 class="recommendations__item-title title-food">Еда</h2>
                     <p class="recommendations__item-text text-food">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
                 </li>
                 <li class="recommendations__item">
-                    <img class="item-suvenirs" src="image/present.svg" width="63.98px" height="76px" alt="Подарок">
                     <h2 class="recommendations__item-title title-suvenirs">Сувениры</h2>
                     <p class="recommendations__item-text text-suvenirs">Не только китайского, но и местного<br> производства!</p>
                 </li>
@@ -75,17 +73,17 @@
                     </div>
                     <img class="reason-two-image" src="image/picture-reason-two.jpg" width="800px" height="256px" alt="Каньон">
                 </li>
-                <li class="reason-list-item reason-three reasons-three-four-five">
+                <li class="reason-three">
                     <h2 class="reasons__item-title  title-three">Небольшая<br> площадь</h2>
                     <p class="reasons__item-subtitle subtitle-three">— №3 —</p>
                     <p class="reasons__item-text text-three">Все достопримечательности<br> находятся очень близко</p>
                 </li>
-                <li class="reason-list-item reason-four reasons-three-four-five">
+                <li class="reason-four">
                     <h2 class="reasons__item-title title-four">Красивая<br> дорога</h2>
                     <p class="reasons__item-subtitle subtitle-four">— №4 —</p>
                     <p class="reasons__item-text text-four">Ехать в седону из лас-вегаса совсем<br> не скучно!</p>
                 </li>
-                <li class="reason-list-item reason-five reasons-three-four-five">
+                <li class="reason-five">
                     <h2 class="reasons__item-title title-five">Мало<br> туристов</h2>
                     <p class="reasons__item-subtitle subtitle-five">— №5 —</p>
                     <p class="reasons__item-text text-five">Большинство едет в гранд каньон<br> и толпится там</p>
@@ -98,18 +96,18 @@
             <button class="button-search-hotel hidden">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
         </section>
         <section class="search-hotel-container">
-            <img src="image/map.png" width="1199px" height="594px" alt="Карта">
-            <form class="search-hotel-form" method="get" action="https://echo.htmlacademy.ru/">
+            <img class="search-hotel__map" src="image/map.png" width="1200px" height="592px" alt="Карта">
+            <form class="search-hotel__form" method="get" action="https://echo.htmlacademy.ru/">
                 <label class="check-in-label">Дата заезда:</label>
                 <input class="check-in" type="text" name="check-in" value="24 АПРЕЛЯ 2017">
                 <svg class="check-in-calendar" width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377zm3.159 18.459a.448.448 0 00.123-.32h.001V4.862a.449.449 0 00-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 00-.438.459v16.302a.45.45 0 00.438.459h17.501a.448.448 0 00.314-.139z" fill="#A9A9A9"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.594 9.225h2.625v2.066H4.594V9.225zm0 3.443h2.625v2.067H4.594v-2.067zm2.625 3.444H4.594v2.066h2.625v-2.066zm1.969 0h2.625v2.066H9.188v-2.066zm2.625-3.444H9.188v2.067h2.625v-2.067zM9.188 9.225h2.625v2.066H9.188V9.225zm7.218 6.887h-2.625v2.066h2.625v-2.066zm-2.625-3.444h2.625v2.067h-2.625v-2.067zm2.625-3.443h-2.625v2.066h2.625V9.225z" fill="#A9A9A9"/>
-                </svg>>
+                </svg>
                 <label class="check-out-label">Дата выезда:</label>
                 <input class="check-out" type="text" name="check-out" value="4 ИЮЛЯ 2017">
                 <svg class="check-out-calendar" width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377zm3.159 18.459a.448.448 0 00.123-.32h.001V4.862a.449.449 0 00-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 00-.438.459v16.302a.45.45 0 00.438.459h17.501a.448.448 0 00.314-.139z" fill="#A9A9A9"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.594 9.225h2.625v2.066H4.594V9.225zm0 3.443h2.625v2.067H4.594v-2.067zm2.625 3.444H4.594v2.066h2.625v-2.066zm1.969 0h2.625v2.066H9.188v-2.066zm2.625-3.444H9.188v2.067h2.625v-2.067zM9.188 9.225h2.625v2.066H9.188V9.225zm7.218 6.887h-2.625v2.066h2.625v-2.066zm-2.625-3.444h2.625v2.067h-2.625v-2.067zm2.625-3.443h-2.625v2.066h2.625V9.225z" fill="#A9A9A9"/>
-                </svg>>
+                </svg>
                 <label class="adult-label" for="adult">Взрослые:</label>
                 <input class="button-minus-adult" type="button" value="-" name="-">
                 <input class="adult" type="text" name="adult" id="adult" value="2">
