@@ -30,7 +30,7 @@
     /*PAGE*/
     .page {
     width: 1280px;
-    min-height: 100%;
+    height: 100%;
 
     background-color: var(--outside);
 
@@ -38,7 +38,7 @@
     }
     
     .page-index {
-    width: 1200px;
+    min-width: 1200px;
     min-height: 100%;
 
     font-family: "PT Sans", Arial, sans-serif;
@@ -103,8 +103,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
-    margin-left: -37px;
     }
 
     .map {
@@ -112,7 +110,7 @@
     justify-content: flex-end;
     align-items: center;
 
-    margin-right: -37px;
+    margin-left: 290px;
     }
 
     .hotels {
@@ -126,6 +124,8 @@
     font-weight: 700;
     line-height: 26px;
     text-decoration: none;
+
+    display: inline-block;
         
     color: var(--black);
     
@@ -604,6 +604,18 @@
     z-index: 1;
     }
 
+    .image-minus-adult {
+    width: 12px;
+    height: 3px;
+
+    grid-column: 3 / 4;
+    grid-row: 6 / 7;
+
+    z-index: 1;
+
+    margin: auto;
+    }
+
     .adult {
     text-align: center;
 
@@ -635,6 +647,18 @@
     z-index: 1;
     }
 
+    .image-plus-adult {
+    width: 11px;
+    height: 11px;
+    
+    grid-column: 5 / 6;
+    grid-row: 6 / 7;
+    
+    z-index: 1;
+    
+    margin: auto;
+    }
+
     .children-label {
     grid-column: 7 / 8;
     grid-row: 6 / 7;
@@ -654,6 +678,18 @@
     color: var(--darkgrey);
     
     z-index: 1;
+    }
+
+    .image-minus-children {
+    width: 12px;
+    height: 3px;
+    
+    grid-column: 8 / 9;
+    grid-row: 6 / 7;
+    
+    z-index: 1;
+    
+    margin: auto;
     }
 
     .children {
@@ -683,6 +719,18 @@
     color: var(--darkgrey);
 
     z-index: 1;
+    }
+
+    .image-plus-children {
+    width: 11px;
+    height: 11px;
+        
+    grid-column: 10 / 11;
+    grid-row: 6 / 7;
+        
+    z-index: 1;
+        
+    margin: auto;
     }
 
     .button-to-find {
@@ -740,18 +788,18 @@
     box-sizing: border-box;
     }
 
-    .button-plus-adult:hover,
-    .button-plus-children:hover,
-    .button-minus-adult:hover,
-    .button-minus-children:hover {
-    color: var(--black);
+    .image-minus-adult:hover rect,
+    .image-plus-adult:hover path,
+    .image-minus-children:hover rect,
+    .image-plus-children:hover path {
+    fill: var(--black);
     }
 
-    .button-plus-adult:active,
-    .button-plus-children:active,
-    .button-minus-adult:active,
-    .button-minus-children:active {
-    color: var(--lightblue);
+    .image-minus-adult:active rect,
+    .image-plus-adult:active path,
+    .image-minus-children:active rect,
+    .image-plus-children:active path {
+    fill: var(--lightblue);
     }
 
     /*FOOTER*/
