@@ -1200,6 +1200,8 @@
     }
 
     .adult {
+    width: 114px;
+
     text-align: center;
 
     position: relative;
@@ -1212,6 +1214,8 @@
     -ms-grid-row: 6;
     -ms-grid-row-span: 1;
     grid-row: 6 / 7;
+
+    -moz-appearance: textfield;
     
     margin: 0 0 2px 2px;
 
@@ -1222,7 +1226,6 @@
     .adult::-webkit-outer-spin-button {
     -webkit-appearance: none;
             appearance: none;
-    -moz-appearance: textfield;
     }
 
     .button-plus-adult {
@@ -1308,6 +1311,8 @@
     }
 
     .children {
+    width: 114px;
+    
     text-align: center;
     
     -ms-grid-column: 8;
@@ -1318,6 +1323,8 @@
     -ms-grid-row: 6;
     -ms-grid-row-span: 1;
     grid-row: 6 / 7;
+
+    -moz-appearance: textfield;
         
     padding: 0 0 2px 2px;
     
@@ -1328,7 +1335,6 @@
     .children::-webkit-outer-spin-button {
     -webkit-appearance: none;
             appearance: none;
-    -moz-appearance: textfield;
     }
 
     .button-plus-children {
