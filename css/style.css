@@ -1,16 +1,16 @@
 :root {
     --white: #FFFFFF;
-    --white-with-opacity-9:rgba(255, 255, 255, 0.9);
-    --white-with-opacity-3:rgba(255, 255, 255, 0.3);
-    --outside:#F2F2F2;
-    --lightgrey:#EBEBEB;
-    --black: #000000;
-    --black-with-opacity-3:rgba(0, 0, 0, 0.3);
+    --white-with-opacity-9: rgba(255, 255, 255, 0.9);
+    --white-with-opacity-3: rgba(255, 255, 255, 0.3);
+    --outside: #F2F2F2;
+    --lightgrey: #EBEBEB;
+    --black:  #000000;
+    --black-with-opacity-3: rgba(0, 0, 0, 0.3);
     --grey: #333333;
     --lightdark: #E5E5E5;
     --darkgrey: #A9A9A9;
     --verylightgrey: #ABABAB;
-    --verylightgrey-3: :rgba(171, 171, 171, 0.3);
+    --verylightgrey-3: rgba(171, 171, 171, 0.3);
     --overgrey: #666666;
     --ultragrey: #888888;
     --supergrey: #BDBBBC;
@@ -18,9 +18,9 @@
     --lightblue: #81B3D2;
     --lightblue-hover: #669EC0;
     --lightblue-active: #5496BD;
-    --lightbrown:#766357;
-    --lightbrown-hover:#604E43;
-    --lightbrown-active:#503E33;
+    --lightbrown: #766357;
+    --lightbrown-hover: #604E43;
+    --lightbrown-active: #503E33;
     }
     /*OTHER-CLASS*/
     .visually-hidden {
@@ -79,7 +79,6 @@
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-row: 56px;
     
     padding: 0 72px;
     margin: 0;
@@ -1348,7 +1347,6 @@
     line-height: 18px;
     
     margin-bottom: 3px;
-    padding-bottom: 4;
     }
         
     .header-result__link {
@@ -1546,7 +1544,7 @@
     background-color: var(--lightblue-active);
     color: var(--white-with-opacity-3);
 
-    out: none;
+    outline: none;
     }
                 
     .button-result-booking {
