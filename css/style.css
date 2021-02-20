@@ -6,6 +6,7 @@
     --lightgrey: #EBEBEB;
     --black:  #000000;
     --black-with-opacity-3: rgba(0, 0, 0, 0.3);
+    --black-with-opacity-2: rgba(0, 1, 1, 0.2);
     --grey: #333333;
     --lightdark: #E5E5E5;
     --darkgrey: #A9A9A9;
@@ -51,6 +52,8 @@
     grid-template-rows: 56px 1fr 120px;
 
     color: var(--white);
+
+    box-shadow: 0px 5px 15px var(--black-with-opacity-2);
 
     padding: 0 40px;
     }
