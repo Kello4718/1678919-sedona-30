@@ -1069,7 +1069,7 @@
     -ms-grid-row-span:  1;
     grid-row:  2 / 3;
 
-    margin: 4px 0 0 1px;
+    margin: 6px 0 0 1px;
     }
 
     .check-in {
@@ -1080,13 +1080,13 @@
 
     border: none;
 
-    padding: 2px 0 6px 14px;
+    padding: 3px 0 4px 14px;
     }
 
-    .check-in-calendar {
+    .button__check-in-calendar {
     width: 21px;
     height: 23px;
-
+    
     -ms-grid-column: 10;
 
     -ms-grid-column-span: 1;
@@ -1096,16 +1096,18 @@
     -ms-grid-row-span: 1;
     grid-row: 2 / 3;
 
-    margin: 7px 9px 8px auto;
+    cursor: pointer;
+
+    border: none;
+    outline: none;
+
+    background-color: transparent;
+
+    padding: 0;
+    margin: 7px 0 0 9px;
     }
 
-    .check-in-calendar:hover path {
-    fill: var(--black);
-    }
-
-    .check-in-calendar:active path {
-    fill: var(--lightblue);
-    }
+    
 
     .check-out-label {
     -ms-grid-column: 2;
@@ -1115,7 +1117,7 @@
     -ms-grid-row-span: 1;
     grid-row: 4 / 5;
 
-    margin: 4px 0 0 1px;
+    margin: 5px 0 0 1px;
     }
 
     .check-out {
@@ -1126,13 +1128,13 @@
 
     border: none;
 
-    padding: 2px 0 6px 14px;
+    padding: 3px 0 4px 13px;
     }
 
-    .check-out-calendar {
+    .button__check-out-calendar {
     width: 21px;
     height: 23px;
-    
+        
     -ms-grid-column: 10;
     
     -ms-grid-column-span: 1;
@@ -1141,18 +1143,34 @@
     -ms-grid-row: 4;
     -ms-grid-row-span: 1;
     grid-row: 4 / 5;
+
+    cursor: pointer;
     
-    margin: 7px 9px 8px auto;
+    border: none;
+    outline: none;
+    
+    background-color: transparent;
+    
+    padding: 0;
+    margin: 7px 0 0 9px;
+    }
+    /*CALENDAR*/
+    .check-in-calendar,
+    .check-out-calendar {
+    width: 21px;
+    height: 23px;
     }
 
+    .check-in-calendar:hover path,
     .check-out-calendar:hover path {
     fill: var(--black);
     }
     
+    .check-in-calendar:active path,
     .check-out-calendar:active path {
     fill: var(--lightblue);
     }
-
+    /*ADULT*/
     .adult-label {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
@@ -1161,10 +1179,13 @@
     -ms-grid-row-span: 1;
     grid-row: 6 / 7;
 
-    margin: 4px 0 0 1px;
+    margin: 5px 0 0 1px;
     }
 
     .button-minus-adult {
+    width: 38px;
+    height: 38px;
+
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3 / 4;
@@ -1175,49 +1196,40 @@
     border: none;
     outline: none;
     
-    background-color: transparent;
+    background-color: var(--outside);
     color: var(--darkgrey);
 
-    z-index: 1;
+    padding: 0;
     }
 
     .image-minus-adult {
     width: 12px;
     height: 3px;
 
-    -ms-grid-column: 3;
-
-    -ms-grid-column-span: 1;
-
-    grid-column: 3 / 4;
-    -ms-grid-row: 6;
-    -ms-grid-row-span: 1;
-    grid-row: 6 / 7;
-
-    z-index: 1;
-
-    margin: auto;
+    margin: 17.5px 13px;
     }
 
     .adult {
-    width: 114px;
+    width: 38px;
+    height: 38px;
 
     text-align: center;
 
     position: relative;
 
-    -ms-grid-column: 3;
+    -ms-grid-column: 4;
 
-    -ms-grid-column-span: 3;
+    -ms-grid-column-span: 1;
 
-    grid-column: 3 / 6;
+    grid-column: 4 / 5;
     -ms-grid-row: 6;
     -ms-grid-row-span: 1;
     grid-row: 6 / 7;
 
     -moz-appearance: textfield;
     
-    margin: 0 0 2px 2px;
+    padding: 0 0 1.5px 2px;
+    box-sizing: border-box;
 
     border: none;
     }
@@ -1229,6 +1241,9 @@
     }
 
     .button-plus-adult {
+    width: 38px;
+    height: 38px;
+
     -ms-grid-column: 5;
     -ms-grid-column-span: 1;
     grid-column: 5 / 6;
@@ -1239,10 +1254,10 @@
     border: none;
     outline: none;
     
-    background-color: transparent;
+    background-color: var(--outside);
     color: var(--darkgrey);
 
-    z-index: 1;
+    padding: 0;
     }
 
     .image-plus-adult {
@@ -1258,8 +1273,6 @@
     -ms-grid-row-span: 1;
     grid-row: 6 / 7;
     
-    z-index: 1;
-    
     margin: auto;
     }
 
@@ -1271,10 +1284,13 @@
     -ms-grid-row-span: 1;
     grid-row: 6 / 7;
 
-    margin: 4px 0 0 1px;
+    margin: 5px 0 0 1px;
     }
 
     .button-minus-children {
+    width: 38px;
+    height: 38px;
+
     -ms-grid-column: 8;
     -ms-grid-column-span: 1;
     grid-column: 8 / 9;
@@ -1284,12 +1300,13 @@
         
     border: none;
     outline: none;
-
-        
+  
     background-color: transparent;
     color: var(--darkgrey);
     
     z-index: 1;
+
+    padding: 0;
     }
 
     .image-minus-children {
@@ -1307,28 +1324,31 @@
     
     z-index: 1;
     
-    margin: auto;
+    margin: 17.5px 13px;
     }
 
     .children {
-    width: 114px;
-    
+    width: 38px;
+    height: 38px;
+
     text-align: center;
     
-    -ms-grid-column: 8;
+    -ms-grid-column: 9;
     
-    -ms-grid-column-span: 3;
+    -ms-grid-column-span: 1;
     
-    grid-column: 8 / 11;
+    grid-column: 9 / 10;
     -ms-grid-row: 6;
     -ms-grid-row-span: 1;
     grid-row: 6 / 7;
 
     -moz-appearance: textfield;
-        
-    padding: 0 0 2px 2px;
+
+    padding: 0 0 1.5px 2px;
+    box-sizing: border-box;
     
     border: none;
+    
     }
 
     .children::-webkit-inner-spin-button,
@@ -1338,6 +1358,9 @@
     }
 
     .button-plus-children {
+    width: 38px;
+    height: 38px;
+    
     -ms-grid-column: 10;
     -ms-grid-column-span: 1;
     grid-column: 10 / 11;
@@ -1352,6 +1375,8 @@
     color: var(--darkgrey);
 
     z-index: 1;
+
+    padding: 0;
     }
 
     .image-plus-children {
@@ -1371,7 +1396,7 @@
         
     margin: auto;
     }
-
+    /*BUTTON-TO-FIND*/
     .button-to-find {
     font-size: 21px;
     line-height: 26px;
@@ -1406,13 +1431,28 @@
 
     outline: none;
     }
-    
+
+    .button-minus-adult,
+    .button-plus-adult,
+    .button-minus-children,
+    .button-plus-children {
+    background-color: var(--outside);
+    }
+
+    .button-minus-adult:hover,
+    .button-plus-adult:hover,
+    .button-minus-children:hover,
+    .button-plus-children:hover {
+    background-color: var(--lightgrey);
+    }
+
     .adult,
     .children,
     .check-in,
     .check-out {
     font-weight: 700;
     line-height: 26px;
+    font-size: 14px;
     
     background-color: var(--outside);
     color: var(--black);
@@ -1432,6 +1472,7 @@
     .check-out:focus {
     background-color: var(--white);
     outline: 2px solid var(--lightdark);
+    outline-offset: -2px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     }
