@@ -1385,12 +1385,17 @@
 
     position: absolute;
     bottom: 0;
+    left: 0;
 
     background: var(--white-with-opacity-9);
 
     z-index: 1;
 
     padding: 12px 0;
+    }
+
+    .footer-catalog {
+    left: 40px;
     }
     /*CONTACTS*/
     .footer--contacts {
@@ -1773,7 +1778,7 @@
     background-image: url(../image/checkbox-box.svg);
     }
 
-    .infrastructure-input:checked + label::after {
+    .infrastructure__input:checked + label::after {
     content: "";
     position: absolute;
     left: 2.26px;
@@ -1851,7 +1856,7 @@
     background-image: url(../image/checkbox-box.svg);
     }
         
-    .type-housing-input:checked + label::after {
+    .type-housing__input:checked + label::after {
     content: "";
     position: absolute;
     left: 2.26px;
@@ -1903,58 +1908,81 @@
     margin-bottom: 10.5px;
     }
 
-    .price {
+    .cost-per-day__price {
     width: 317px;
     height: 36px;
 
-    display: -webkit-box;
+    text-align: center;
 
-    display: -ms-flexbox;
+    display: grid;
+    grid-template-columns: 157px 2px 156px;
 
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-
-    background-color: transparent;
     border: 2px solid var(--white);
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    border-radius: 2px;
+    box-sizing: border-box;
+
+    margin-top: 2px;
     }
 
-    .price-element {
+    .cost-per-day__label--min {
+    grid-column: 1 / 2;
+
+    padding: 3px 0 0 30px;
+    }
+
+    .cost-per-day__between {
+    grid-column: 2 / 3;
+    
     width: 2px;
     height: 22px;
 
-    position: relative;
+    background-color: var(--white);
 
-    background-color:  var(--white);
+    margin: 4px 0 0 0;
     }
 
-    .price-element::before {
-    content: "от 0";
+    .cost-per-day__label--max {
+    grid-column: 3 / 4;
 
-    width: 58px;
-    height: 21px;
+    padding: 3px 0 0 13px;
+    }
+
+    .cost-per-day__input--min {
+    width: 40px;
+
+    border: none;
+    outline: none;
     
-    position: absolute;
-    top: 0;
-    left: -90px;
+    color: var(--white);
+    background-color:transparent;
+
+    -moz-appearance: textfield;
+
+    padding: 0;
     }
 
-    .price-element::after {
-    content: "до 3000";
-
-    width: 83px;
-    height: 21px;
-        
-    position: absolute;
-    top: 0;
-    left: 55px;
+    .cost-per-day__input--min::-webkit-outer-spin-button,
+    .cost-per-day__input--min::-webkit-inner-spin-button {
+    -webkit-appearance: none;
     }
+
+    .cost-per-day__input--max {
+    width: 40px;
+
+    border: none;
+    outline: none;
+    
+    color: var(--white);
+    background-color:transparent;
+    
+    -moz-appearance: textfield;
+    }
+    
+    .cost-per-day__input--max::-webkit-outer-spin-button,
+    .cost-per-day__input--max::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    }
+
     .filter-range__controls {
     width: 316px;
     height: 35px;
@@ -1966,20 +1994,20 @@
     padding-top: 20px;
     }
     /*SCALE*/
-    .scale {
+    .filter-range__scale {
     height: 2px;
 
     background-color:  var(--white-with-opacity-3);
     }
 
-    .scale .bar {
+    .filter-range__scale .filter-range__bar {
     width: 252px;
     height: 2px;
 
     background-color: var(--white);
     }
     /*TOGGLE*/
-    .toggle {
+    .filter-range__toggle {
     width: 3.8px;
     height: 3.82px;
 
@@ -1999,7 +2027,7 @@
     cursor: pointer;
     }
 
-    .toggle:hover {
+    .filter-range__toggle:hover {
     width: 4.6px;
     height: 4.34px;
 
@@ -2046,7 +2074,7 @@
     color: var(--white);
     background-color: transparent;
 
-    padding: 7px 35px 8px 36px;
+    padding: 3px 35px 8px 33px;
     margin-right: 10px;
     }
 
@@ -2211,7 +2239,7 @@
     border-bottom: none;
     }
 
-    .header-result__link.checked {
+    .header-result_checked {
     color: var(--lightblue);
 
     text-decoration: none;
@@ -2238,7 +2266,7 @@
         -ms-flex-align: center;
             align-items: center;
 
-    margin-bottom: 7px;
+    margin-top: 2px;
     }
 
     .header-result__triangle-link:hover path {
@@ -2305,7 +2333,7 @@
     
     }
 
-    .left-part-of-flexbox {
+    .result-found__left-part-of-flexbox {
     width: 422px;
     height: 150px;
 
@@ -2486,7 +2514,7 @@
     outline: none;
     }
 
-    .right-part-of-flexbox {
+    .result-found__right-part-of-flexbox {
     width: 119px;
     height: 150px;
 
@@ -2510,7 +2538,7 @@
     padding-right: 71px;
     }
 
-    .right-part-of-flexbox__stars {
+    .result-found__right-part-of-flexbox__stars {
     width: 119px;
     height: 17px;
     display: -webkit-box;
