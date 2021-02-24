@@ -2277,7 +2277,7 @@
     fill: var(--lightblue);
     }
 
-    .header-result__triangle-link.checked path {
+    .header-result__triangle-link_checked path {
     fill: var(--lightblue);
     }
 
