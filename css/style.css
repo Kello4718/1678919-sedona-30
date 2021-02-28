@@ -40,7 +40,7 @@
     /*INDEX*/
     /*PAGE*/
     .page {
-    max-width: 1200px;
+    width: 1200px;
 
     background-color: var(--outside);
 
@@ -57,8 +57,6 @@
     text-transform: uppercase;
 
     color: var(--white);
-    
-    margin: auto;
     }
     /*HEADER*/
     .header {
@@ -1576,10 +1574,6 @@
     line-height: 21px;
     font-weight: 400;
     text-transform: uppercase;
-
-    display: -ms-grid;
-    display: grid;
-    grid-template-columns: 1200px;
     
     color: var(--white);
     background-color: var(--outside);
@@ -1595,12 +1589,6 @@
     }
 
     .filter {
-    /*display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 73px 135px 119px 136px 347px 317px 73px;
-    grid-template-columns: 73px 135px 119px 136px 347px 317px 73px;
-    -ms-grid-rows: 26.5px 159.5px 31px;
-    grid-template-rows: 26.5px 159.5px 31px;*/
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
