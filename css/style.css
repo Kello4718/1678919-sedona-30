@@ -44,6 +44,8 @@
 
     background-color: var(--outside);
 
+    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+
     margin: auto;
     }
     
@@ -1047,19 +1049,13 @@
     grid-row: 4 / 5;
     }
     /*CALENDAR*/
-    .check-in-calendar,
-    .check-out-calendar {
-    width: 21px;
-    height: 23px;
-    }
-
-    .check-in-calendar:hover path,
-    .check-out-calendar:hover path {
+    .registration__check-in-calendar:hover path,
+    .registration__check-out-calendar:hover path {
     fill: var(--black);
     }
     
-    .check-in-calendar:active path,
-    .check-out-calendar:active path {
+    .registration__check-in-calendar:active path,
+    .registration__check-out-calendar:active path {
     fill: var(--lightblue);
     }
     /*ADULT*/
@@ -1558,11 +1554,11 @@
     padding: 14px 73px 14px 0;
     }
 
-    .footer--copyright-logo:hover path {
+    .footer--copyright__logo:hover path {
     fill: var(--lightblue);
     }
 
-    .footer--copyright-logo:active path {
+    .footer--copyright__logo:active path {
     fill: var(--supergrey);
     }
     /*CATALOG*/
