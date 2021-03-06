@@ -169,7 +169,7 @@
     .header-navigation__link:active {
     color: var(--black-with-opacity-3);}
 
-    .header-navigation__list .checked {
+    .header-navigation__link_active {
     color: var(--lightbrown);}
     /*LOGOTIP*/
     .header-navigation__logo-link {
