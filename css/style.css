@@ -1000,7 +1000,7 @@
     background-image: url("../image/background-filter-form.png");
     background-size: cover;}
 
-    .filter {
+    .filter-container-form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1014,8 +1014,10 @@
 
     padding: 26.5px 0 32px 0;}
     
-    /*INFRASTRUCTURE*/
-    .infrastructure {
+    /*INFRASTRUCTURE & TYPE-HOUSING & COST-PER-DAY*/
+    .filter-container-form__infrastructure,
+    .filter-container-form__type-housing,
+    .filter-container-form__cost-per-day {
     width: 135px;
     
     display: -webkit-box;
@@ -1029,13 +1031,17 @@
     margin: 0 119px 0 0;
     padding: 0;}
 
-    .infastructure__subtitle {
+    .filter-container-form__infrastructure-subtitle,
+    .filter-container-form__type-housing-subtitle,
+    .filter-container-form__cost-per-day-subtitle {
     font-weight: 700;
     font-size: 16px;
         
     color: var(--white);}
     
-    .infrastructure__list {
+    .filter-container-form__infastructure-list,
+    .filter-container-form__type-housing-list,
+    .filter-container-form__cost-per-day-list {
     list-style: none;
 
     display: -webkit-box;
@@ -1051,17 +1057,20 @@
     margin: 0;
     padding: 0;}
 
-    .infrastructure__item {
+    .filter-container-form__infastructure-item,
+    .filter-container-form__type-housing-item {
     margin-top: 22px}
 
-    .infrastructure__item label {
+    .filter-container-form__infastructure-item label,
+    .filter-container-form__type-housing-item label {
     display: block;
 
     position: relative;
 
     padding-left: 40px;}
 
-    .infrastructure__item label::before {
+    .filter-container-form__infastructure-item label::before,
+    .filter-container-form__type-housing-item label::before {
     content: "";
 
     width: 23px;
@@ -1073,45 +1082,35 @@
 
     background-image: url("../image/checkbox-box-white-not-checked.svg");}
 
-    .infrastructure__item--wi-fi label::before {
+    .filter-container-form__infastructure-input:checked + label::before,
+    .filter-container-form__type-housing-input:checked + label::before {
     content: "";
-                    
+    
     width: 23px;
     height: 23px;
-                        
-    position: absolute; 
-    left: 0;
-    top: 0;
-                        
-    background-image: url("../image/checkbox-box-dark-not-checked.svg");}
-
-    .infrastructure__input:checked + label::before {
-    content: "";
-
-    width: 23px;
-    height: 23px;
-
+    
     position: absolute;
     left: 0;
     top: 0;
-    
+        
     background-image: url("../image/checkbox-box-white-checked.svg");
     background-repeat: no-repeat;}
-
-    .infrastructure__input:checked + label::after {
-    content: "";
     
+    .filter-container-form__infastructure-input:checked + label::after,
+    .filter-container-form__type-housing-input:checked + label::after {
+    content: "";
+        
     width: 23px;
     height: 23px;
-    
+        
     position: absolute;
     left: 4px;
     top: 1px;
-        
+            
     background-image: url("../image/checkbox-jackdaw-white.svg");
     background-repeat: no-repeat;}
-
-    .infrastructure__input--parking:checked + label::before {
+    /*INFASTRUCTURE*/
+    .filter-container-form__infastructure-input-parking:checked + label::before {
     content: "";
             
     width: 23px;
@@ -1123,7 +1122,7 @@
                 
     background-image: url("../image/checkbox-box-dark-checked.svg");}
 
-    .infrastructure__input--parking:checked + label::after {
+    .filter-container-form__infastructure-input-parking:checked + label::after {
     content: "";
     
     width: 23px;
@@ -1134,118 +1133,30 @@
     top: 1px;
         
     background-image: url("../image/checkbox-jackdaw-dark.svg");}
+
+    .filter-container-form__infastructure-item-wi-fi label::before {
+    content: "";
+                        
+    width: 23px;
+    height: 23px;
+                            
+    position: absolute; 
+    left: 0;
+    top: 0;
+                            
+    background-image: url("../image/checkbox-box-dark-not-checked.svg");}
     /*TYPE-HOUSING*/
-    .type-housing {
-    width: 136px;
-
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-
-    border: none;
-    
-    margin: 0 347px 0 0;
-    padding: 0;}
-    
-    .type-housing__subtitle {
-    font-weight: 700;
-    font-size: 16px;
-            
-    color: var(--white);}
-        
-    .type-housing__list {
-    list-style: none;
-
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    
-    margin: 0;
-    padding: 0;}
-
-    .type-housing__item {
-    margin-top: 22px;}
-
-    .type-housing__item label {
-    display: block;
-    
-    position: relative;
-    
-    padding-left: 40px;}
-    
-    .type-housing__item label::before {
-    content: "";
-
-    width: 23px;
-    height: 23px;
-
-    position: absolute;
-    left: 0;
-    top: 0;
-    
-    background-image: url("../image/checkbox-box-white-not-checked.svg");}
-        
-    .type-housing__input:checked + label::before {
-    content: "";
-
-    width: 23px;
-    height: 23px;
-
-    position: absolute;
-    left: 0;
-    top: 0;
-    
-    background-image: url("../image/checkbox-box-white-checked.svg");
-    background-repeat: no-repeat;}
-
-    .type-housing__input:checked + label::after {
-    content: "";
-    
-    width: 23px;
-    height: 23px;
-    
-    position: absolute;
-    left: 4px;
-    top: 1px;
-        
-    background-image: url("../image/checkbox-jackdaw-white.svg");
-    background-repeat: no-repeat;}
+    .filter-container-form__type-housing {
+    margin: 0 347px 0 0;}
     
     /*COST-PER-DAY*/
-    .cost-per-day {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    
-    border: none;
-            
-    margin: 0;
-    padding: 0;}
+    .filter-container-form__cost-per-day {
+    margin: 0;}
 
-    .cost-per-day__subtitle {
-    font-weight: 700;
-    font-size: 16px;
-    
-    color: var(--white);
+    .filter-container-form__cost-per-day-subtitle {
+    margin: 0 0 10px 2px;}
 
-    margin-bottom: 10.5px;}
-
-    .cost-per-day__price {
+    .filter-container-form__cost-per-day-price {
     width: 317px;
     height: 36px;
 
@@ -1259,9 +1170,11 @@
     border: 2px solid var(--white);
     border-radius: 2px;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;}
+            box-sizing: border-box;
+        
+    margin-left: 2px;}
 
-    .cost-per-day__label--min {
+    .filter-container-form__cost-per-day-label-min {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1 / 2;
@@ -1270,7 +1183,7 @@
 
     padding: 3px 0 0 30px;}
 
-    .cost-per-day__label--min::after {
+    .filter-container-form__cost-per-day-label-min::after {
     content: "";
 
     position: absolute;
@@ -1282,14 +1195,14 @@
 
     background-color: var(--white);}
 
-    .cost-per-day__label--max {
+    .filter-container-form__cost-per-day-label-max {
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3 / 4;
 
     padding: 3px 0 0 13px;}
 
-    .cost-per-day__input--min {
+    .filter-container-form__cost-per-day-input-min {
     width: 40px;
 
     border: none;
@@ -1302,11 +1215,11 @@
 
     padding: 0;}
 
-    .cost-per-day__input--min::-webkit-outer-spin-button,
-    .cost-per-day__input--min::-webkit-inner-spin-button {
+    .filter-container-form__cost-per-day-input-min::-webkit-outer-spin-button,
+    .filter-container-form__cost-per-day-input-min::-webkit-inner-spin-button {
     -webkit-appearance: none;}
 
-    .cost-per-day__input--max {
+    .filter-container-form__cost-per-day-input-max {
     width: 40px;
 
     border: none;
@@ -1317,11 +1230,11 @@
     
     -moz-appearance: textfield;}
     
-    .cost-per-day__input--max::-webkit-outer-spin-button,
-    .cost-per-day__input--max::-webkit-inner-spin-button {
+    .filter-container-form__cost-per-day-input-max::-webkit-outer-spin-button,
+    .filter-container-form__cost-per-day-input-max::-webkit-inner-spin-button {
     -webkit-appearance: none;}
 
-    .filter-range__controls {
+    .filter-container-form__cost-per-day-filter-range__controls {
     width: 316px;
     height: 35px;
 
@@ -1331,19 +1244,21 @@
 
     padding-top: 20px;}
     /*SCALE*/
-    .filter-range__scale {
-    width: 316px;
+    .filter-container-form__cost-per-day-filter-range__scale {
+    width: 314px;
     height: 2px;
 
-    background-color:  var(--white-with-opacity-3);}
+    background-color:  var(--white-with-opacity-3);
 
-    .filter-range__scale .filter-range__bar {
+    margin-left: 4px;}
+
+    .filter-container-form__cost-per-day-filter-range__bar {
     width: 252px;
     height: 2px;
 
     background-color: var(--white);}
     /*TOGGLE*/
-    .filter-range__toggle {
+    .filter-container-form__cost-per-day-filter-range__toggle {
     width: 3.8px;
     height: 3.82px;
 
@@ -1361,7 +1276,7 @@
 
     cursor: pointer;}
 
-    .filter-range__toggle:hover {
+    .filter-container-form__cost-per-day-filter-range__toggle:hover {
     width: 4.6px;
     height: 4.34px;
 
@@ -1375,13 +1290,13 @@
 
     cursor: pointer;}
 
-    .toggle-min {
-    left: 0;}
+    .filter-container-form__cost-per-day-filter-range__toggle_min {
+    left: 4px;}
 
-    .toggle-max {
-    left: 253px;}
+    .filter-container-form__cost-per-day-filter-range__toggle_max {
+    left: 256px;}
     /*BUTTON-SHOW*/
-    .button-show {
+    .filter-container-form__button-show {
     width: 137px;
     height: 36px;
 
@@ -1403,9 +1318,9 @@
     background-color: transparent;
 
     padding: 3px 35px 8px 33px;
-    margin-right: 10px;}
+    margin: 0 0 0 87px;}
 
-    .button-show:hover   {
+    .filter-container-form__button-show:hover   {
     background-color: var(--white);
     color: var(--black);}
     /*RESULT*/
@@ -1414,7 +1329,7 @@
 
     background-color: var(--white);}
 
-    .header-result {
+    .result-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1433,7 +1348,7 @@
 
     padding: 29px 0 31px 0;}
 
-    .header-result::after {
+    .result-header::after {
     content: "";
 
     position: absolute;
@@ -1445,7 +1360,7 @@
 
     background-color: var(--lightdark);}
 
-    .header-result__left-container {
+    .result-header__left-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1457,7 +1372,7 @@
         -ms-flex-align: center;
             align-items: center;}
 
-    .header-result__title {
+    .result-header__title {
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
@@ -1466,7 +1381,7 @@
 
     margin: 0 46px 0 0;}
 
-    .header-result__text {
+    .result-header__text {
     font-size: 12px;
     line-height: 18px;
 
@@ -1474,7 +1389,7 @@
 
     margin: 0 40px 0 0;}
 
-    .header-result__list {
+    .result-header__list {
     font-size: 12px;
     line-height: 18px;
     list-style: none;
@@ -1488,32 +1403,32 @@
     margin: 0;
     padding: 0;}   
 
-    .header-result__item {
+    .result-header__item {
     margin-right: 32px;}
         
-    .header-result__link {
+    .result-header__link {
     text-decoration: none;
 
     border-bottom: 1px dotted var(--lightblue);
 
     color: var(--black-with-opacity-3);}
             
-    .header-result__link:hover {
+    .result-header__link:hover {
     color: var(--lightblue);}
             
-    .header-result__link:active {
+    .result-header__link:active {
     color: var(--black);
 
     border-bottom: none;}
 
-    .header-result_checked {
+    .result-header_checked {
     text-decoration: none;
 
     color: var(--lightblue);
 
     border-bottom: none;}
     /*TRIANGLE*/
-    .header-result__right-container {
+    .result-header__right-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1525,13 +1440,13 @@
 
     padding-top: 5px;}
 
-    .header-result__triangle-link:hover path {
+    .result-header__triangle-link:hover path {
     fill: var(--black);}
 
-    .header-result__triangle-link:active path {
+    .result-header__triangle-link:active path {
     fill: var(--lightblue);}
 
-    .header-result__triangle-link_checked path {
+    .result-header__triangle-link_checked path {
     fill: var(--lightblue);}
 
     .triangle-top,
@@ -1542,7 +1457,7 @@
     .triangle-bottom {
     margin-left: 12px;}
     /*RESULT__FOUND-LIST*/
-    .result-found__list {
+    .result__found-list {
     list-style: none;
 
     display: -webkit-box;
@@ -1553,7 +1468,7 @@
 
     padding: 0;}
 
-    .result-found__item {  
+    .result__found-item {  
     width: 1056px;
     height: 151px;
 
@@ -1572,7 +1487,7 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;}
     
-    .result-found__item::after {
+    .result__found-item::after {
     content: "";
 
     position: absolute;
@@ -1584,7 +1499,7 @@
     
     background-color: var(--lightdark);}
 
-    .result-found__left-container {
+    .result-found-left-container {
     width: 422px;
 
     display: -webkit-box;
@@ -1598,13 +1513,13 @@
         -ms-flex-pack: justify;
             justify-content: space-between;}
     
-    .result-found__left-container__image {
+    .result-found-left-container__image {
     width: 135px;
     height: 90px;
 
     margin-top: 7px;}
 
-    .result-found__left-container__about {
+    .result-found-left-container__about {
     width: 258px;
 
     display: -webkit-box;
@@ -1615,7 +1530,7 @@
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;}
 
-    .result-found__left-container__title {
+    .result-found-left-container__title {
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
@@ -1624,29 +1539,29 @@
     
     margin: 0;}
         
-    .result-found__left-container__title:hover {
+    .result-found-left-container__title:hover {
     color: var(--lightblue-hover);}
         
-    .result-found__left-container__title:active {
+    .result-found-left-container__title:active {
     color: var(--black-with-opacity-3);}
     
-    .result-found__left-container__text {
+    .result-found-left-container__text {
     color: var(--grey);
     
     margin: 0 38px 0 0;}
 
-    .result-found__left-container__text-motel {
+    .result-found-left-container__text-motel {
     margin: 0 63px 0 0;}
 
-    .result-found__left-container__text-apartments {
+    .result-found-left-container__text-apartments {
     margin: 0 21px 0 0;}
  
-    .result-found__left-container__min {
+    .result-found-left-container__min {
     color: var(--grey);
 
     margin: 0;}
 
-    .button-result-more {
+    .result-found-left-container__button-result-more {
     width: 110px;
     height: 27px;
     
@@ -1663,16 +1578,16 @@
     padding: 3px 16px 3px 17px;
     margin: auto 5px 0 0;}
                 
-    .button-result-more:hover {
+    .result-found-left-container__button-result-more:hover {
     background: var(--lightblue-hover);}
                 
-    .button-result-more:active {
+    .result-found-left-container__button-result-more:active {
     background-color: var(--lightblue-active);
     color: var(--white-with-opacity-3);
 
     outline: none;}
                 
-    .button-result-booking {
+    .result-found-left-container__button-result-booking {
     width: 143px;
     height: 27px;
     
@@ -1689,16 +1604,16 @@
     padding: 3px 17px 3px 16px;
     margin-top: auto;}
                 
-    .button-result-booking:hover {
+    .result-found-left-container__button-result-booking:hover {
     background: var(--lightbrown-hover);}
                     
-    .button-result-booking:active {
+    .result-found-left-container__button-result-booking:active {
     background-color: var(--lightbrown-active);
     color: var(--white-with-opacity-3);
 
     outline: none;}
 
-    .result-found__right-container {
+    .result-found-right-container {
     width: 119px;
 
     display: -webkit-box;
@@ -1712,7 +1627,7 @@
         -ms-flex-pack: justify;
             justify-content: space-between;}
 
-    .result-found__right-container__stars {
+    .result-found-right-container__stars {
     width: 119px;
     height: 17px;
 
@@ -1747,7 +1662,7 @@
     margin: 0 0 0 5px;}
 
     /*RAITING*/
-    .result-found__right-container__raiting {
+    .result-found-right-container__raiting {
     width: 110px;
     height: 27px;
 
@@ -1756,6 +1671,6 @@
 
     margin: auto 0 0 9px;}
 
-    .result-found__right-container__raiting-text {
+    .result-found-right-container__raiting-text {
     margin: 0;
     padding: 4px 12px 6px 14px;}
