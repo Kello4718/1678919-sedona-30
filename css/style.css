@@ -516,8 +516,6 @@
     line-height: 26px;
     
     border: none;
-
-    z-index: 2;
     
     color: var(--white);
     background-color: var(--lightbrown);
@@ -572,8 +570,7 @@
         0% {
             -webkit-transform: translateY(-50px);
                     transform: translateY(-50px);
-            display: none;
-            z-index: 1;}
+            display: none;}
         100% {
             -webkit-transform: translateY(0px);
                     transform: translateY(0px)}}
@@ -582,8 +579,7 @@
         0% {
             -webkit-transform: translateY(-50px);
                     transform: translateY(-50px);
-            display: none;
-            z-index: 1;}
+            display: none;}
         100% {
             -webkit-transform: translateY(0px);
                     transform: translateY(0px)}}
